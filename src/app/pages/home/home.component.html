@@ -1,1 +1,54 @@
-<p>home works!</p>
+<section style="margin: 10px 15px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner galeriaRecortada ">
+      <div class="carousel-item active">
+        <img src="assets/img/galeria/1.jpg" height="500" margin="3px"  alt="" class=" d-block w-100" alt="perros">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/galeria/2.jpg" width="300" height="500" alt="" class="d-block w-100" alt="perros">
+      </div>
+      <div class="carousel-item ">
+        <img src="assets/img/galeria/3.jpg" width="300" height="500" alt="" class="d-block w-100" alt="pug">
+      </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+
+      <div class="card-group" >
+          <div class="card m-5">
+            <img src="assets/img/tratamientos.jpg" class="card-img-top" style="width: 30%; margin:auto; border-radius: 50%">
+            <div class="card-body">
+              <h5 class="text-center" [routerLink]="['/tratamientos']"  routerLinkActive="router-link-active">Tratamientos</h5>
+            </div>
+          </div>
+          <div class="card m-5">
+              <img src="assets/img/tratamientos.jpg" class="card-img-top" style="width: 30%; margin:auto; border-radius: 50%">
+              <div class="card-body">
+                <h5 class="text-center" [routerLink]="['/gaeria']"  routerLinkActive="router-link-active">Galeria</h5>
+            </div>
+          </div>
+          <div class="card m-5">
+              <img src="assets/img/tratamientos.jpg" class="card-img-top" style="width: 30%; margin:auto; border-radius: 50%">
+              <div class="card-body">
+                <h5 class="text-center" [routerLink]="['/citas']"  routerLinkActive="router-link-active">Citas</h5>
+            </div>
+          </div>
+        </div>
+
+</section>
+

@@ -12,6 +12,8 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { PagesNotFountComponent } from './pages/pages-not-fount/pages-not-fount.component';
 import { CitasComponent } from './pages/citas/citas.component';
 import { AppRoutingModule } from './app.routes';
+import { FooterComponent } from './components/common/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AppRoutingModule } from './app.routes';
     TratamientosComponent,
     ProductosComponent,
     PagesNotFountComponent,
-    CitasComponent
+    CitasComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
