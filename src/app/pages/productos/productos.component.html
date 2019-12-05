@@ -1,1 +1,16 @@
-<p>productos works!</p>
+Hola
+
+
+<router-outlet></router-outlet>
+<div class="card-columns m-3">  
+    <div class="card" *ngFor="let prod of misdatos">
+      <img src="/assets/images/productos/{{prod.idProducto}}.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.nombre}}</h5>
+        <p class="card-text">{{prod.descripcion}}</p>
+        <p class="card-text">${{prod.precioUso|number}}</p>
+        
+      </div>
+     
+    </div> 
+  </div>
