@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class ServiceNameService {
   constructor(private httpClient: HttpClient) { }
   
-}}
+}
 
 @Injectable({
   providedIn: 'root'
