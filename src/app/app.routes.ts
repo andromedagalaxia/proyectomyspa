@@ -20,6 +20,7 @@ const routes: Routes = [
     { path: 'citas', component: CitasComponent },
     { path: 'ayuda', component: HelpComponent },
     { path: 'tratamientos', component: TratamientosComponent },
+    { path: 'productos', component: ProductosComponent },
     { path: 'galeria', component: ProductosComponent },
    // { path: '**', component: PagesNotFountComponent },
     { path: '**', redirectTo: '/home', pathMatch:'full' },
