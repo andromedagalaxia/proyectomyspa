@@ -11,7 +11,6 @@ import { TratamientosComponent } from './pages/tratamientos/tratamientos.compone
 import { ProductosComponent } from './pages/productos/productos.component';
 import { PagesNotFountComponent } from './pages/pages-not-fount/pages-not-fount.component';
 
-
 //rutas
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -22,15 +21,9 @@ const routes: Routes = [
     { path: 'tratamientos', component: TratamientosComponent },
     { path: 'productos', component: ProductosComponent },
     { path: 'galeria', component: ProductosComponent },
-   // { path: '**', component: PagesNotFountComponent },
+    { path: '**', component: PagesNotFountComponent },
     { path: '**', redirectTo: '/home', pathMatch:'full' },
     { path: '', redirectTo: '/home', pathMatch:'full' },
-
-    //{ path: 'path/:routeParam', component: MyComponent },
-    //{ path: 'staticPath', component: ... },
-    //{ path: '**', component: ... },
-    //{ path: 'oldPath', redirectTo: '/staticPath' },
-    //{ path: ..., component: ..., data: { message: 'Custom' }
 ];
 
 @NgModule({

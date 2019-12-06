@@ -1,26 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { Products} from 'src/app/models/models';
+import { Products } from 'src/app/models/models';
 import { ServiceNameService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
-  styles: []
-})
+  styles: [] })
 export class ProductosComponent implements OnInit {
-  
-misdatos:Products[]=[];
 
+  misdatos: Products[] = [];
 
-  constructor(private ProductsService: ServiceNameService) { 
-    this.ProductsService.getAll().subscribe((data: Products[])=>
-      {
-        this.misdatos = data;
-        })
-
+  constructor(private ProductsService: ServiceNameService) {
+    this.ProductsService.getAll().subscribe((data: Products[]) => {
+      this.misdatos = data;
+    })
   }
 
   ngOnInit() {
   }
-
 }
