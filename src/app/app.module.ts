@@ -15,6 +15,8 @@ import { PagesNotFountComponent } from './pages/pages-not-fount/pages-not-fount.
 import { CitasComponent } from './pages/citas/citas.component';
 import { AppRoutingModule } from './app.routes';
 import { FooterComponent } from './components/common/footer/footer.component';
+import { FotosComponent } from './pages/fotos/fotos.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -30,6 +32,8 @@ import { FooterComponent } from './components/common/footer/footer.component';
     PagesNotFountComponent,
     CitasComponent,
     FooterComponent,
+    FotosComponent,
+    LoginComponent,
 
   ],
   imports: [

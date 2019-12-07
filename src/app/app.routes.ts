@@ -10,6 +10,7 @@ import { HelpComponent } from './pages/help/help.component';
 import { TratamientosComponent } from './pages/tratamientos/tratamientos.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { PagesNotFountComponent } from './pages/pages-not-fount/pages-not-fount.component';
+import { FotosComponent } from './pages/fotos/fotos.component';
 
 //rutas
 const routes: Routes = [
@@ -20,7 +21,7 @@ const routes: Routes = [
     { path: 'ayuda', component: HelpComponent },
     { path: 'tratamientos', component: TratamientosComponent },
     { path: 'productos', component: ProductosComponent },
-    { path: 'galeria', component: ProductosComponent },
+    { path: 'galeria', component: FotosComponent },
     { path: '**', component: PagesNotFountComponent },
     { path: '**', redirectTo: '/home', pathMatch:'full' },
     { path: '', redirectTo: '/home', pathMatch:'full' },
