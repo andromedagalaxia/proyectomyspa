@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Products } from 'src/app/models/models';
+import { Productos } from 'src/app/models/models';
 import { ServiceNameService } from 'src/app/services/products.service';
 
 @Component({
@@ -8,10 +8,10 @@ import { ServiceNameService } from 'src/app/services/products.service';
   styles: [] })
 export class ProductosComponent implements OnInit {
 
-  misdatos: Products[] = [];
+  misdatos: Productos[] = [];
 
   constructor(private ProductsService: ServiceNameService) {
-    this.ProductsService.getAll().subscribe((data: Products[]) => {
+    this.ProductsService.getAll().subscribe((data: Productos[]) => {
       this.misdatos = data;
     })
   }

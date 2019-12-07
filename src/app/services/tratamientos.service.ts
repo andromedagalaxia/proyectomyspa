@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Products } from '../models/models';
+import { Productos } from '../models/models';
 import { TratamientosComponent } from '../pages/tratamientos/tratamientos.component';
 import { TouchSequence } from 'selenium-webdriver';
 

@@ -1,8 +1,9 @@
-export interface Products{
+export interface Productos{
     idProducto?:string,
-    nombre?:string,
-    marca?:string,
-    precioUso?:number
+    Nombre?:string,
+    Marca?:string,
+    estatus?:string,
+    PrecioUso?:number
     }
 
     export interface Tratamientos{
