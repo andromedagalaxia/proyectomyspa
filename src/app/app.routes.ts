@@ -11,6 +11,7 @@ import { TratamientosComponent } from './pages/tratamientos/tratamientos.compone
 import { ProductosComponent } from './pages/productos/productos.component';
 import { PagesNotFountComponent } from './pages/pages-not-fount/pages-not-fount.component';
 import { FotosComponent } from './pages/fotos/fotos.component';
+import { LoginComponent} from './pages/login/login.component'
 
 //rutas
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
     { path: 'ayuda', component: HelpComponent },
     { path: 'tratamientos', component: TratamientosComponent },
     { path: 'productos', component: ProductosComponent },
-    { path: 'galeria', component: FotosComponent },
+    { path: 'fotos', component: FotosComponent },
+    { path: 'login', component: LoginComponent},
     { path: '**', component: PagesNotFountComponent },
     { path: '**', redirectTo: '/home', pathMatch:'full' },
     { path: '', redirectTo: '/home', pathMatch:'full' },
