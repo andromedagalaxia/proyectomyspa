@@ -10,7 +10,7 @@
   {
     "idTratamiento": 2,
     "nombre": "Batido natural",
-    "descripcion": "La leche tiene propiedades que producen colágeno, que reafirman y hacen que la piel sea m�s flexible. Este tratamiento consiste en un masaje general (facial y corporal) basado en cremas y leches naturales.",
+    "descripcion": "La leche tiene propiedades que producen colágeno, que reafirman y hacen que la piel sea más flexible. Este tratamiento consiste en un masaje general (facial y corporal) basado en cremas y leches naturales.",
     "duracion": 1,
     "precio": 800,
     "idproducto": 2
@@ -18,7 +18,7 @@
   {
     "idTratamiento": 3,
     "nombre": "Ducha de sensaciones",
-    "descripcion": "Es un masaje energético que combina masaje corporal, facial, del cuero cabelludo, siempre al ritmo de la m�sica, con uso de esencias de aromaterapia finalizando con hidromasaje.",
+    "descripcion": "Es un masaje energético que combina masaje corporal, facial, del cuero cabelludo, siempre al ritmo de la música, con uso de esencias de aromaterapia finalizando con hidromasaje.",
     "duracion": 1,
     "precio": 1500,
     "idproducto": 3
@@ -66,7 +66,7 @@
   {
     "idTratamiento": 9,
     "nombre": "Masaje con esencias naturales",
-    "descripcion": "Disfruta de un rato inolvidable con la micro exfoliaci�n y el masaje de esencias naturales podrás elegir los componentes a tu gusto con los que recibirás un delicado y relajante masaje general (facial y corporal).",
+    "descripcion": "Disfruta de un rato inolvidable con la micro exfoliación y el masaje de esencias naturales podrás elegir los componentes a tu gusto con los que recibirás un delicado y relajante masaje general (facial y corporal).",
     "duracion": 1,
     "precio": 1000,
     "idproducto": 9

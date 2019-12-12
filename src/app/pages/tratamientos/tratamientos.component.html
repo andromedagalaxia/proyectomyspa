@@ -4,10 +4,10 @@
         <div class="card" *ngFor="let trat of tratamientos ">
       <img src = "/assets/imagenestratamientos/{{trat.idTratamiento}}.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title" style="text-align: center;">{{trat.nombre}}</h5>
+        <h5 class="font-weight-bold" style="text-align: center;">{{trat.nombre}}</h5>
         <p class="card-text" >{{trat.descripcion}}</p>
         <p class="card-text">Duración: {{trat.duracion}}:00 hrs</p>
-        <p class="card-text">Precio: ${{trat.precio|number}}</p>
+        <p class="font-weight-bold text-danger" >Precio: ${{trat.precio|number}}</p>
       </div>
     </div>
   </div>
