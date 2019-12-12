@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app.routes';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { FotosComponent } from './pages/fotos/fotos.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,13 +34,14 @@ import { LoginComponent } from './pages/login/login.component';
     CitasComponent,
     FooterComponent,
     FotosComponent,
-    LoginComponent,
-
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

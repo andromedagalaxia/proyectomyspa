@@ -1,24 +1,74 @@
-<br><br><h2 class="text-center"  style="color:#5b5f46"  >Registrate</h2><br>
+<br><br>
+<h2 class="text-center" style="color:#5b5f46">Registrate</h2><br>
 
 <div class="row m-3">
-   
-  
-  <div class="card " style="width: 550px; margin: 20px auto; align-content:center; padding: 10px; background-color:white; text-align: center;">
-      <form><br>
-          <div class="form-group row">
-            <label for="staticEmail" class="col-sm-3 col-form-label">Usuario</label>
-            <div class="col-sm-8">
-                  <input type="text" class="form-control" id="Nombre" placeholder="usuario">
-            </div>
-          </div>
-         
-          <div class="form-group row">
-                  <label for="staticEmail" class="col-sm-3 col-form-label">Contraseña</label>
-                  <div class="col-sm-8">
-                    <input type="password" class="form-control" id="Mensaje" placeholder="contraseña...">
-                  </div>
-          </div>
-          <BR>
-          <button type="submit" class="btn btn-primary">Aceptar</button>
+  <div class="card "
+    style="width: 550px; margin: 20px auto; align-content:center; padding: 10px; background-color:white; text-align: center;">
+    <form><br>
+      <div class="form-group row">
+        <label for="staticEmail" class="col-sm-3 col-form-label">Usuario</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="Nombre" placeholder="usuario">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="staticEmail" class="col-sm-3 col-form-label">Contraseña</label>
+        <div class="col-sm-8">
+          <input type="password" class="form-control" id="Mensaje" placeholder="contraseña...">
+        </div>
+      </div>
+      <BR>
+      <button type="submit" class="btn btn-primary">Aceptar</button>
     </form>
   </div>
+
+
+  <form [formGroup]="contenidoForm" (ngSubmit)="onSubmit()">
+    <section class="text-center" style="background-image:url(assets/img/fondo.png); ">
+      <div class="row m-3">
+        <div class="card "
+          style="width: 550px; margin: 20px auto; align-content:center; padding: 10px; background-color:white; text-align: center; opacity: 0.9;">
+          <br>
+          <h2 class="text-center" style="color:#5b5f46">Crea tu usuario</h2><br>
+          <div class="form-group row">
+            <label for="Nombre" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="form-group col-sm-10">
+              <input type="text" class="form-control" id="Nombre" placeholder="Nombre completo"
+                formControlName="Nombre">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="NombreUsuario" class="col-sm-2 col-form-label">Nombre de usuario</label>
+            <div class="form-group col-sm-10">
+              <input type="text" class="form-control" id="NombreUsuario" placeholder="Nombre de usuario"
+                formControlName="NombreUsuario">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Contrasenia" class="col-sm-2 col-form-label">Contraseña</label>
+            <div class="form-group col-sm-10">
+              <input type="password" class="form-control" id="Contrasenia" placeholder="Contraseña"
+                formControlName="Contrasenia">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Correo" class="col-sm-2 col-form-label">Correo</label>
+            <div class="form-group col-sm-10">
+              <input type="mail" class="form-control" id="Correo" placeholder="Correo" formControlName="Correo">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Telefono" class="col-sm-2 col-form-label">Teléfono</label>
+            <div class="form-group col-sm-10">
+              <input type="text" class="form-control" id="Telefono" placeholder="Teléfono" formControlName="Telefono">
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Crear</button>
+        </div>
+      </div>
+    </section>
+  </form>
+
+

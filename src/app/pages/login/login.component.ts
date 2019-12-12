@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UsuariosService } from 'src/app/services/usuarios.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  contenidoForm: FormGroup;
 
-  ngOnInit() {
-  }
+  constructor( private usuariosService: UsuariosService, private formBuilder: FormBuilder) {
 
+    this.contenidoForm = this.formBuilder.group({
+      Nombre: ['', Validators.required],
+      NombreUsuario: ['', Validators.required],
+      Contrasenia: ['', Validators.required],
+      Rol: ['', Validators.required],
+      Correo: ['', Validators.required],
+      Telefono: ['', Validators.required]
+    })
+   }
+
+  ngOnInit() {}
+
+  onSubmit(){
+    this.usuariosService.CrearUsuario(this.contenidoForm.value).subscribe(usuario =>{
+  
+      })
+    }
 }
