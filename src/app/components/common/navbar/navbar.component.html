@@ -36,9 +36,11 @@
                                        <a class="dropdown-item  "  style="color:#5b5f46;font-size: 12px;" [routerLink]="['/productos']">Productos<span class="sr-only">(current)</span></a>
                                 </div>
                        </li>
+                       <div *ngIf="loginSession">
                         <li class="nav-item" routerLinkActive="active">
                                 <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 19px; ;" [routerLink]="['/citas']">Citas <span class="sr-only">(current)</span></a>
                         </li>
+                        </div>
                                                                              
                       
                         <li class="nav-item" routerLinkActive="active">

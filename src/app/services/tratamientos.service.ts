@@ -4,7 +4,7 @@ import { Productos } from '../models/models';
 import { TratamientosComponent } from '../pages/tratamientos/tratamientos.component';
 import { TouchSequence } from 'selenium-webdriver';
 
-const URL_TRATAMIENTOS= 'assets/data/tratamientos.json';
+const URL_TRATAMIENTOS= 'https://proyectospa.azurewebsites.net/api/tratamientos/GetTratamientos';
 
 @Injectable({
   providedIn: 'root'

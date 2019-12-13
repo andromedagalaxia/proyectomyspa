@@ -50,15 +50,17 @@ export class LoginComponent implements OnInit {
       this.loginSpiner = false;
       this.loginService.Login(this.loginForm.value).subscribe(login => {
         this.loginSpiner = true; 
-        if(!login)
+        console.log(login);
+        let usuario : Usuarios = login;
+        if(usuario.idUsuario <= 0)
         {
           alert("No existe el usuario");
         }
         else{
-          let usuario : Usuarios = login;
+          
           alert("BIENVENIDO(A) " + usuario.nombre);
           localStorage.setItem("usuario", JSON.stringify(usuario))
-          window.location.href = "http://localhost:4200/home";
+          window.location.href = "http://localhost:4200/citas";
         }
       });
     }

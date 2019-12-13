@@ -7,7 +7,7 @@ export interface Productos {
 }
 
 export interface Tratamientos {
-    idTratamiento?: string,
+    idTratamiento?: number,
     nombre?: string
 }
 
