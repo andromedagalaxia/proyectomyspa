@@ -1,25 +1,24 @@
-<div class="text-repet" style="height: 550px;; background-image:url(assets/img/fondo3.png); margin: -15px; padding: -10px; ">
+<div class="text-repet" style="height: 580px;; background-image:url(assets/img/fondo3.png); margin: -15px; padding: -10px; ">
   
   <div class="row m-3">
     
-    <div class="jumbotron">
-      <h1>BIENVENIDO(A) {{user.nombre}}</h1>
-      <h4>TUS CITAS</h4>
+    <div class="card" style=" height: 570px ;width: 350px; background-color: white; opacity: 0.9;">
+      <h1>Bienvenido(A) {{user.nombre}}</h1>
+      <h4>Ttus citas</h4>
 
       <div *ngFor="let cita of citas">
-        TRATAMIENTO: {{cita.reservacion}}
+        Tratamiento: {{cita.reservacion}}
         <br>
-        CLIENTE: {{cita.nombre}}
+        Cliente: {{cita.nombre}}
         <br>
-        FECHA: {{cita.fecha}} HORA: {{cita.horaInicio}}
+        Fecha: {{cita.fecha}} HORA: {{cita.horaInicio}}
         <hr>
       </div> 
 
 
-
     </div>
     
-    <div class="card " style="width: 550px; margin: 20px auto; align-content:center; padding: 10px; background-color:white; text-align: center; opacity: 0.9;">
+    <div class="card " style="width: 700px; height: 450px; margin: 50px auto; align-content:center; padding: 10px; background-color:white; text-align: center; opacity: 0.9;">
         <br><h2 class="text-center"  style="color:#5b5f46"  >Agenda tu cita</h2><br>
   
       
@@ -57,3 +56,4 @@
     </div>
 
   </div>
+

@@ -1,8 +1,7 @@
 <nav class="text-right" style="background-color: #adb87a;" >
 
-
-        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #adb87a; width: auto; " >
-                        <button class="navbar-expand " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #adb87a;position:static; width: auto; " >
+                        <button class="navbar-expand-lg " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-expand-icon"></span>
                         </button>
                         
@@ -52,7 +51,7 @@
                                         <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 19px;" [routerLink]="['/login']" routerLinkActive="router-link-active" >Login  <span class="sr-only">(current)</span></a>
                                 </div>
                                 <ng-template #elseBlock>
-                                        <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 19px;" (click)="logout()" routerLinkActive="router-link-active" >Logout  <span class="sr-only">(current)</span></a>               
+                                        <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 17px;" (click)="logout()" routerLinkActive="router-link-active" >Logout  <span class="sr-only">(current)</span></a>               
                                 </ng-template>
                         </li>
                         </ul>
