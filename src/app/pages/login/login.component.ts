@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   contenidoForm: FormGroup;
   loginForm: FormGroup;
   loginSpiner: Boolean = true;
+  upSpiner: Boolean = true;
 
   constructor( private usuariosService: UsuariosService, private loginService: LoginService, private formBuilder: FormBuilder) {
 
@@ -35,8 +36,13 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
 
   onSubmit(){
+    this.upSpiner = false;
     this.usuariosService.CrearUsuario(this.contenidoForm.value).subscribe(usuario =>{
-  
+      this.upSpiner = true;
+      if(usuario)
+        alert("USUARIO CREADO CORRECTAMENTE");
+      else
+        alert("ERROR AL CREAR USUARIO");
       })
     }
 
