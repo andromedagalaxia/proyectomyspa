@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,21 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  @Input() loginSession : Boolean;
 
-  ngOnInit() {}
+  constructor(private router: Router) {  }
+
+  ngOnInit() {
+
+
+
+  }
+
+  logout(){
+    localStorage.removeItem("usuario");
+    window.location.href = "http://localhost:4200/home";
+  }
+
+
+
 }

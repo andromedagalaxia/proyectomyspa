@@ -8,19 +8,28 @@ export interface Productos {
 
 export interface Tratamientos {
     idTratamiento?: string,
-    nombre?: string,
-    descripcion?: string,
-    duracion?: string,
-    precio?: number,
-    idproducto?: number
+    nombre?: string
 }
 
 export interface Usuarios {
-    IdUsuario?: number,
-    Nombre?: string,
+    idUsuario?: number,
+    nombre?: string,
     NombreUsuario?: string,
     Contrasenia?: string,
     Rol?: string,
     Correo?: string,
     Telefono?: string
+}
+
+export interface Login{
+    NombreUsuario?: string,
+    Contrasenia?: string
+}
+
+export interface Reservaciones{
+    nombre?: string,
+    fecha?: string,
+    horaInicio?: string,
+    idUsuario?: number,
+    idtrata?: number
 }
