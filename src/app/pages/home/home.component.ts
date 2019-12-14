@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     addClass: 'alert alert-success border-success alert-styled-right alert-arrow-right',
     shadow:true,
     hide:true,
-    delay:1000*10,
+    delay:1000*6,
     type:'success'
 
 
