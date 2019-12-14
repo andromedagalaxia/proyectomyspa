@@ -12,9 +12,21 @@ export class HomeComponent implements OnInit {
   constructor() 
   {
     PNotifyButtons; // Initiate the module. Important!
-    PNotify.alert('Bienvenida');
+    PNotify.alert({'Bienvenida',
+    title: "Bienvenido",
+    text:"Tarea de Miguel, Diana y Lupita",
+    animation: 'fade',
+    icon: 'icon-bell-check',
+    addClass: 'alert alert-success border-success alert-styled-right alert-arrow-right',
+    shadow:true,
+    hide:true,
+    delay:1000*10,
+    type:'success'
 
-   }
+
+
+
+   });}
 
   ngOnInit() {
   }
