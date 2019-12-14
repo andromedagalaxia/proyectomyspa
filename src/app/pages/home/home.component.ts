@@ -12,9 +12,9 @@ export class HomeComponent implements OnInit {
   constructor() 
   {
     PNotifyButtons; // Initiate the module. Important!
-    PNotify.alert({'Bienvenida',
+    PNotify.alert({
     title: "Bienvenido",
-    text:"Tarea de Miguel, Diana y Lupita",
+    text:"Maryah Spa",
     animation: 'fade',
     icon: 'icon-bell-check',
     addClass: 'alert alert-success border-success alert-styled-right alert-arrow-right',
