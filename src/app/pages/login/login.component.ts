@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
           
           alert("BIENVENIDO(A) " + usuario.nombre);
           localStorage.setItem("usuario", JSON.stringify(usuario))
-          window.location.href = "http://localhost:4200/citas";
+          window.location.href = " https://marayahspa.firebaseapp.com/citas";
         }
       });
     }

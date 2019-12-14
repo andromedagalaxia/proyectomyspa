@@ -57,11 +57,11 @@ export class CitasComponent implements OnInit {
       this.citaSpiner = true;
       if(cita){
         alert("CITA CREADA CORRECTAMENTE")
-        window.location.href= "http://localhost:4200/citas"
+        window.location.href= " https://marayahspa.firebaseapp.com/citas"
       }
       else{
         alert("OCURRIO UN ERROR CON LA BASE DE DATOS, INTENTA NUEVAMENTE")
-        window.location.href= "http://localhost:4200/citas"
+        window.location.href= " https://marayahspa.firebaseapp.com/citas"
       }
         
 
