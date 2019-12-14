@@ -13,14 +13,14 @@
                                 
 
                         <li class="nav-item " routerLinkActive="active" >
-                                <a class="nav-link font-weight-bold m-0 " style="color:#5b5f46; font-size: 19px;" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link font-weight-bold m-0 " style="color:#5b5f46; font-size: 19px;" [routerLink]="['/home']" routerLinkActive="router-link-active" >Inicio <span class="sr-only">(current)</span></a>
                         </li>
                 
                         <li class="nav-item" routerLinkActive="active">
                                 <a class="nav-link font-weight-bold m-0 " style="color:#5b5f46; font-size: 19px;" [routerLink]="['/nosotros']">Nosotros <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item" routerLinkActive="active">
-                                <a class="nav-link font-weight-bold m-0"   style="color:#5b5f46;font-size: 19px;" [routerLink]="['/fotos']">Galeria <span class="sr-only">(current)</span></a>
+                                <a class="nav-link font-weight-bold m-0"   style="color:#5b5f46;font-size: 19px;" [routerLink]="['/fotos']">Galería <span class="sr-only">(current)</span></a>
                         </li>
                       
 
@@ -46,15 +46,15 @@
                                                                              
                       
                         <li class="nav-item" routerLinkActive="active">
-                                <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 19px;" [routerLink]="['/contacto']">Contactanos <span class="sr-only">(current)</span></a>
+                                <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 19px;" [routerLink]="['/contacto']">Contacto <span class="sr-only">(current)</span></a>
                         </li>
                      
                         <li class="nav-item" routerLinkActive="active">
                                 <div *ngIf="!loginSession; else elseBlock">
-                                        <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 19px;" [routerLink]="['/login']" routerLinkActive="router-link-active" >Login  <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 19px;" [routerLink]="['/login']" routerLinkActive="router-link-active" >Iniciar sesión  <span class="sr-only">(current)</span></a>
                                 </div>
                                 <ng-template #elseBlock>
-                                        <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 17px;" (click)="logout()" routerLinkActive="router-link-active" >Logout  <span class="sr-only">(current)</span></a>               
+                                        <a class="nav-link font-weight-bold m-0" style="color:#5b5f46; font-size: 17px;" (click)="logout()" [routerLink]="['/home']" routerLinkActive="router-link-active" >Salir  <span class="sr-only">(current)</span></a>               
                                 </ng-template>
                         </li>
                         </ul>
